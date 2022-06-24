@@ -1,0 +1,30 @@
+$black: #222;
+$blue: #42a2da;
+$green: #a3d066;
+$gray: #676f72;
+
+$font-m: 13px;
+
+$maxwidth: 1570px;
+
+$tablet: 1024px;
+$mobile-min: 380px;
+$mobile-max: 767px;
+
+@mixin tablet{
+  @media screen and (max-width: $tablet){
+    @content;
+  }
+}
+
+@mixin mobile{
+  @media screen and (max-width: $mobile-max){
+    @content;
+  }
+}
+
+@mixin mobile-min{
+  @media screen and (max-width: $mobile-min){
+    @content;
+  }
+}
